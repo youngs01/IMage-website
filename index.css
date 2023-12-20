@@ -292,15 +292,49 @@ img {
 .collab-card-costumer-identity {} */
 
 
-.slack-support-gradient-background{
+.slack-support-gradient-background {
     width: 100%;
-    background: linear-gradient(to bottom ,#221B45 25%,#3F1282);
-height: 200px;
-border-radius: 40px;
+    background: linear-gradient(to bottom,
+            #221B45 25%,#3F1282);
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content:center ;
 }
 
-.slack-support-heading{
+.slack-support-heading {
     line-height: 50px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.slack-support-input-parent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.slack-support-input{
+    padding: 17px 20px;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid transparent;
+    border-radius: 10px 0 0 10px;
+}
+
+.slack-support-input-btn{
+    background-color: #7A00FF;
+    color: white;
+    padding: 17px 20px ;
+border: 1px solid transparent;
+border-radius: 0 10px 10px 0;
+font-weight: 600;
+outline: none;
+}
+
+.slack-support-input:focus{
+    outline: none;
 }
 
 
@@ -308,20 +342,54 @@ border-radius: 40px;
 
 
 
+@media screen and (max-width:1400px) {
+.slack-support-input-btn{
+font-size: 14px;
+padding: 8px 20px;
+}
+}
 
+@media screen and (max-width:435px) {
+    .slack-support-heading{
+        font-size: 20px;
+         line-height: normal;
+    }
 
+}
 
+@media screen and (max-width:1200px) {
 
-
-
-
-
+}
 
 
 @media screen and (max-width:770px) {
     .star-div-parent {
         justify-content: center;
     }
+
+    .slack-support-heading{
+        text-align: center;
+    }
+    .slack-support-input-parent{
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        
+    }
+
+    .slack-support-input-btn{
+        border-radius: 10px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .slack-support-input{
+        width: 100%;
+        max-width: 100%;
+     border-radius: 10px;
+    }
+
 
 }
 
@@ -330,6 +398,12 @@ border-radius: 40px;
         font-size: 50px;
         font-weight: 00;
     }
+
+    .slack-support-input-btn{
+        font-size: 17px;
+        padding: 17px 20px;
+        }
+
 }
 
 @media screen and (max-width:532px) {
@@ -352,27 +426,27 @@ border-radius: 40px;
 
     }
 
-    .collab-card-para{
-        font-size: 15px ;
+    .collab-card-para {
+        font-size: 15px;
     }
 
-    .collab-card-costumer{
+    .collab-card-costumer {
         max-width: 50px;
     }
 
-    .card-collab-img{
+    .card-collab-img {
         max-width: 150px;
     }
 
-    .collab-card-costumer-name{
+    .collab-card-costumer-name {
         font-size: 13px;
     }
 
-    .collab-card-costumer-identity{
+    .collab-card-costumer-identity {
         font-size: 13px;
     }
 
-    .card-navigation-btn{
+    .card-navigation-btn {
         padding: 6px 9px;
         font-size: 15px;
     }
