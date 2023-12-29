@@ -97,8 +97,8 @@
       </div>
       <div class="col-12 pt-4">
         <div class="d-flex align-items-center justify-content-center email-div-parent">
-          <input type="text" class="hero-input" placeholder="Enter your work email">
-          <a href="#/" class="hero-input-btn">Get started</a>
+          <input type="text" class="hero-input" id="heroInput" placeholder="Enter your work email">
+          <a href="#/" class="hero-input-btn" id="emailBtn" onclick="validateEmail()">Get started</a>
         </div>
       </div>
       <div class="col-12 pt-4 ">
@@ -214,8 +214,8 @@
         </div>
 
         <div class="row pt-5">
-          <div class="col-12 col-lg-6">
-            <div class="row gap-0 gap-lg-2">
+          <div class="col-12 col-lg-6 ">
+            <div class="row gap-0 gap-lg-2 pt-4">
 
               <div class="col-4 col-md-4 col-lg-2 d-flex justify-content-center">
                 <img src="g2-bages-1.png" alt="" class="g2-bages-img">
@@ -250,23 +250,218 @@
               </div>
 
             </div>
-            <div class="row">
-              <div class="col-6"></div>
-              <div class="col-6"></div>
+            <div class="row pt-4 pt-lg-5 ">
+              <div class="col-12 col-md-6">
+                <div class="d-flex flex-column gap-2">
+                  <p class="d-flex justify-content-center align-items-center gap-2">
+                    <i class="fa-solid fa-star g2-star"></i>
+                    <i class="fa-solid fa-star g2-star"></i>
+                    <i class="fa-solid fa-star g2-star"></i>
+                    <i class="fa-solid fa-star g2-star"></i>
+                    <i class="fa-solid fa-star g2-star"></i>
+                  </p>
+                  <p class="g2-text">"A must have tool for CS & Support Teams."</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6  pt-4 pt-md-0">
+                <div class="d-flex flex-column  gap-2">
+                  <p class="d-flex justify-content-center align-items-center gap-2">
+                    <i class="fa-solid fa-star g2-star"></i>
+                    <i class="fa-solid fa-star g2-star"></i>
+                    <i class="fa-solid fa-star g2-star"></i>
+                    <i class="fa-solid fa-star g2-star"></i>
+                    <i class="fa-solid fa-star g2-star"></i>
+                  </p>
+                  <p class="g2-text">"Finally a way to have visibility on slack."</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-6">
 
+
+          <div class="col-12 col-lg-6 pt-5 pt-lg-0">
+            <div class="swiper mySwiper ">
+              <div class="swiper-wrapper position-relative ">
+
+                <div class="swiper-slide position-relative ">
+                  <div class="w-100 h-100 p-5 d-flex flex-column gap-3 slide-parent">
+                    <p class="collab-card-text"> " Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sint similique rem quo, distinctio quidem, officiis ipsa facere recusandae quibusdam ullam unde
+                      illo iure voluptas ipsam necessitatibus facilis voluptatum magnam repellendus. "</p>
+                    <div class="">
+                      <img src="collab-card-logo-incident.io-img.png" alt="" class="collab-card-img">
+                    </div>
+                    <div class="d-flex align-items-center gap-3 pt-2">
+                      <div class=""><img src="Screenshot 2023-12-19 043750.png" alt="" class="collab-card-user-img">
+                      </div>
+                      <div class="d-flex flex-column gap-1">
+                        <p class="collab-card-user-name ">Ryan Hoskin</p>
+                        <p class="collab-card-user-work">VP customer Success</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+ 
+     
+              </div>
+              <div class="card-collab-next-btn"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="card-collab-back-btn"><i class="fa-solid fa-chevron-left"></i></div>
+            </div>
           </div>
         </div>
-
-
       </div>
-
     </div>
   </div>
 
 
+
+  <div class="container-fluid pt-0 pt-md-5">
+    <div class="container pt-5 ">
+      <div class="row   slack-support-parent py-5 px-2 px-lg-5">
+        <div class="col-12 col-lg-6">
+          <h1 class="slack-support-heading text-white text-center text-lg-start  m-0">Deliver personalize, <span
+              class="d-block"></span>
+            effortless Slack support</h1>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center pt-5 pt-lg-0">
+          <div class=" w-100 d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center w-100 justify-content-center slack-support-input-parent">
+              <input type="text" class="slack-support-input py-3 px-3" placeholder="Enter your work email"
+                id="heroInput">
+              <a href="#/" class="slack-support-input-btn text-white py-3 px-5 text-center "
+                onclick="validateEmail()">Request a demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid pt-5  px-0 ">
+    <div class="ai-slack-bg py-5 mt-5a">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center ai-slack-heading">
+              AI meets Slack : for modern teams to <span class="d-none d-lg-block"></span>
+              deliver superior CX - in time, everytime
+            </h1>
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col-12 col-lg-7">
+            <div class="w-100 h-100 ai-slack-card-parent py-3 px-3 px-md-5">
+              <img src="Ai-slack-img1.png" alt="" class="ai-slack-img1">
+              <div class="d-flex  flex-column gap-2 pt-3">
+                <card-info class="ai-slack-card1-key">request management</card-info>
+                <h5 class="ai-slack-card1-heading">Your undefined for a new world of customer support </h5>
+                <p class="ai-slack-card1-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem
+                  <span class="d-block"></span> porro consequatur quibusdam illo est.
+                </p>
+                <a href="#/" class="d-flex align-items-center gap-2 ai-slack-card1-btn">Learn more <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5 pt-5 pt-lg-0">
+            <div class="w-100 h-100 ai-slack-card-parent py-3 px-3 px-md-5">
+              <img src="ai-slack-img2.png" alt="" class="">
+              <div class="d-flex  flex-column gap-2 pt-3">
+                <card-info class="ai-slack-card1-key">request management</card-info>
+                <h5 class="ai-slack-card1-heading">Your new world of slack ticketing</h5>
+                <p class="ai-slack-card1-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem
+                  porro consequatur</p>
+                <a href="#/" class="d-flex align-items-center gap-2 ai-slack-card1-btn">Learn more <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col-12 col-lg-5">
+            <div class="w-100 h-100 ai-slack-card-parent pt-0 pb-3 px-3 px-md-5">
+              <img src="ai-slack-img3.png" alt="" class="">
+              <div class="d-flex  flex-column gap-2 pt-3">
+                <card-info class="ai-slack-card1-key">request management</card-info>
+                <h5 class="ai-slack-card1-heading">Your new world of slack ticketing</h5>
+                <p class="ai-slack-card1-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem
+                  porro consequatur</p>
+                <a href="#/" class="d-flex align-items-center gap-2 ai-slack-card1-btn">Learn more <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7 pt-5 pt-lg-0">
+            <div class="w-100 h-100 ai-slack-card-parent py-3 px-3 px-md-5">
+              <img src="ai-slack-img4.png" alt="" class="ai-slack-img1">
+              <div class="d-flex  flex-column gap-2 pt-3">
+                <card-info class="ai-slack-card1-key">request management</card-info>
+                <h5 class="ai-slack-card1-heading">Your undefined for a new world of customer support </h5>
+                <p class="ai-slack-card1-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem
+                  <span class="d-block"></span> porro consequatur quibusdam illo est.
+                </p>
+                <a href="#/" class="d-flex align-items-center gap-2 ai-slack-card1-btn">Learn more <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5 pb-5">
+          <div class="col-12 d-flex align-items-center justify-content-center">
+            <a href="#/" class="ai-slack-talk-specialist-btn text-center d-flex align-items-center gap-3">Talk to a
+              product specialist <img src="Screenshot 2023-12-28 043233.png" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid pt-5 ">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h1 class="slack-chaos-heading">
+            Learn how modern companies  <span class="d-none d-lg-block"></span> have solved Slack chaos
+          </h1>
+        </div>
+        <div class="col-12 col-lg-4 d-flex align-items-end justify-content-end pt-3 pt-lg-0 slack-chaos-btn-customer-stories-column">
+          <a href="#/" class="slack-chaos-btn-customer-stories text-white d-flex align-items-center justify-content-center">Customers Stories</a>
+        </div>
+      </div>
+      <div class="row pt-5 justify-content-center gap-5 gap-md-0">
+        <div class="col-12 col-md-6 col-lg-4 slack-card-column ">
+          <div class="bg-white rounded-4 px-4 py-4 slack-chaos-card1 ">
+            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img" >
+             <h4 class="text-center slack-chaos-card-heading">3hrs</h4>
+             <p class="text-center slack-chaos-card-para">Daily individual time savings</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4  pt-5 pt-md-0 slack-card-column">
+          <div class="bg-white rounded-4 px-4 py-4 slack-chaos-card1">
+            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img" >
+             <h4 class="text-center slack-chaos-card-heading">3hrs</h4>
+             <p class="text-center slack-chaos-card-para">Daily individual time savings</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4  pt-5 pt-lg-0 slack-card-column">
+          <div class="bg-white rounded-4 px-4 py-4 slack-chaos-card1">
+            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img" >
+             <h4 class="text-center slack-chaos-card-heading">3hrs</h4>
+             <p class="text-center slack-chaos-card-para">Daily individual time savings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

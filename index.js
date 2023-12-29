@@ -1,8 +1,9 @@
-// const inputEmail = document.getElementById('inputHero');
-// inputEmail.focus();
-
-// console.log("hello world")
-
-
-
+function validateEmail() {
+    const gmailInputHero = document.getElementById('heroInput').value;
+    if (gmailInputHero.startsWith('ab') && gmailInputHero.endsWith('@gmail.com')) {
+        alert("Thanks, but I am not sending.");
+    } else {
+        alert("Please write a proper email.");
+    }
+}
 
