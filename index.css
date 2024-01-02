@@ -241,19 +241,30 @@
 
   .swiper {
       width: 100%;
-      /* height: 400px; */
       height: 100%;
   }
 
-  .swiper-slide {
-
-      font-size: 18px;
-  background-color: rgba(255, 255, 255, 0.603);
-       
+  .swiper-card-slider {
       border-radius: 20px;
   }
 
+  .swiper-slide {
+      border-radius: 20px;
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.493);
+      display: flex;
+      justify-content: center;
+  }
 
+  .card-slide-wrapper {
+      width: 100%;
+      gap: 1px;
+      border-radius: 20px;
+  }
+
+  .swiper-button-lock {
+      display: block;
+  }
 
   .card-collab-next-btn {
       color: #7C03FF;
@@ -261,7 +272,7 @@
       padding: 10px 13px;
       border-radius: 100px;
       position: absolute;
-      bottom: 30px;
+      bottom: 50px;
       right: 20px;
       z-index: 100;
       font-size: 15px;
@@ -274,7 +285,7 @@
       padding: 10px 13px;
       border-radius: 100px;
       position: absolute;
-      bottom: 30px;
+      bottom: 50px;
       right: 70px;
       z-index: 100;
   }
@@ -340,7 +351,7 @@
   }
 
   .ai-slack-bg {
-      background:linear-gradient(to bottom,#FBFBFB ,#F9F9F9,#F8F8F8);
+      background: linear-gradient(to bottom, #FBFBFB, #F9F9F9, #F8F8F8);
   }
 
   .ai-slack-card-parent {
@@ -371,63 +382,270 @@
   }
 
   .ai-slack-talk-specialist-btn {
-background-color: #7A00FF;
-padding: 15px 30px;
-border-radius: 10px;
-font-weight: 500;
-color: white;
+      background-color: #7A00FF;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-weight: 500;
+      color: white;
   }
 
-  .ai-slack-talk-specialist-btn img{
-    max-width: 60px;
+  .ai-slack-talk-specialist-btn img {
+      max-width: 60px;
   }
 
-  .slack-chaos-heading{
-    font-weight: 600;
-    font-size: 50px;
+  .slack-chaos-heading {
+      font-weight: 600;
+      font-size: 50px;
   }
 
-  .slack-chaos-btn-customer-stories{
-    background-color: #7A00FF;
-   padding: 20px 40px;
-   font-weight: 500;
-   letter-spacing: 0.6px;
-   font-size: 18px; 
-   border-radius: 12px;
+  .slack-chaos-btn-customer-stories {
+      background-color: #7A00FF;
+      padding: 20px 40px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      font-size: 18px;
+      border-radius: 12px;
   }
 
-.slack-chaos-card1{
-    box-shadow: 1px 1px 50px 1px rgb(185, 185, 185);
-    display: flex;
+  .slack-chaos-card1 {
+      box-shadow: 1px 1px 50px 1px rgb(185, 185, 185);
+      display: flex;
       gap: 10px;
-    flex-direction: column;
+      flex-direction: column;
 
+  }
+
+  .slack-chaos-card1-img {
+      width: auto;
+      height: auto;
+  }
+
+  .slack-chaos-card-heading {
+      background: linear-gradient(to bottom, #8606fd 50%, #C83BFF 50%);
+      color: transparent;
+      -webkit-background-clip: text;
+      font-size: 50px;
+      font-weight: 900;
+  }
+
+  .slack-chaos-card-para {
+      font-size: 25px;
+  }
+
+  .harness-support-bg {
+      border-radius: 20px;
+      background: linear-gradient(to right, #A54BE5, #560EAF 50%, #851CE0);
+  }
+
+  .harness-support-heading {
+      color: white;
+      font-weight: 700;
+      font-size: 50px;
+  }
+
+  .harness-input {
+      font-size: 20px;
+      padding: 20px 20px;
+      width: 100%;
+      max-width: 350px;
+      border: 0;
+      border-radius: 10px 0 0 10px;
+      outline: none;
+  }
+
+  .harness-input-btn {
+      background-color: #7A00FF;
+      padding: 20px 20px;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 10px 10px 0;
+  }
+
+  .slack-chaos-btn-customer-stories-column {
+      justify-content: end;
+  }
+
+  .costumer-facing-team-bg {
+      background-color: #030526;
+  }
+
+  .constumer-facing-team-heading {
+      color: white;
+      font-weight: 600;
+      font-size: 50px;
+
+  }
+
+
+  /*
+gallery slider inicialize here
+*/
+  /* 
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+/* .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
 }
-
-.slack-chaos-card1-img{
-    width: auto;
-    height: auto;
+.myswiper-gallery-slider {
+    width: 100%;
 }
-
-.slack-chaos-card-heading{
-    background: linear-gradient(to bottom,#8606fd 50%,#C83BFF 50%);
-    color: transparent;
-    -webkit-background-clip: text;
+.mySwiper4 {
+    height: 100%;
+    width: 100%;
+    background-color: #1B1E35;
+}
+.mySwiper3 {
+    box-sizing: border-box;
+    height: fit-content;
+}
+.mySwiper3 .swiper-slide {
+    width: 25%;
+}
+.mySwiper3 .swiper-slide-thumb-active {
+    background-color: #121329;
+    border-bottom: 2px solid #7A00FF;
+}
+/* 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.slider-end-border {
+    border-radius: 0px 10px 0 0 !important;
+}
+.gallery-slider-slide {
+    border-bottom: 1px solid transparent;
+    background-color: #14162F;
+    border-radius: 10px 0 0 0;
+    height: fit-content;
+    display: flex;
+    align-items: end;
+}
+.gallery-slider-slide h5 {
+    font-weight: 450;
+    padding: 10px 0;
+}
+.gallery-slider-slide-content {}
+.gallery-slider-heading {
+    color: #A4A5AE;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.gallery-slider-para {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-weight: 300;
+    gap: 20px;
+    font-size: 20px;
+}
+.gallery-slider-btn {
+    background-color: #7A00FF;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    gap: 15px;
+}
+.gallery-slider-btn img {
+    max-width: 40px;
+    background-color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.gallery-slider-img{
+    width: 100%;
+    height: 100%;
+}
+.gallery-slider-para-demo {
+    color: #92939E;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.gallery-slider-para-demo span {
+    text-decoration: underline;
+}
+.gallery-slider-para-demo i {
+    font-size: 12px;
+}
+.slack-conversation-heading {
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 700;
+    color: black;
+}
+.slack-conversation-hero-btn {
+    background-color: #7A00FF;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.slack-conversation-div-med {
+      width: 100%;
+      height: 150px;
+
+      border-radius: 20px;
+     background-color: rgba(128, 128, 128, 0.075);
 }
 
-.slack-chaos-card-para{
+.slack-conversatin-bg{
+    background-color: rgba(128, 128, 128, 0.062);
+}
+
+.slack-conversation-supporter{
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.slack-conversation-supporter-img{
+    max-width: 60px;
+}
+
+.slack-conversation-supporter-tag{
+text-transform: uppercase;
+font-size: 13pxs;
+}
+
+.slack-conversation-supporter-heading{
     font-size: 25px;
+    font-weight: 600;
+}
+
+.slack-conversation-supporter-heading i{
+    font-size: 15px;
 }
 
 
-
-
-
-
-
-
+.galley-features-div{
+    padding-left: 40px !important;
+}
 
 
 
@@ -460,6 +678,14 @@ color: white;
           margin-top: 280px;
       }
 
+      .gallery-slider-para {
+ font-size: 17px;
+    }
+
+    .gallery-slider-para i{
+        font-size: 15px;
+    }
+
   }
 
   @media screen and (max-width:992px) {
@@ -473,9 +699,37 @@ color: white;
   }
 
   @media screen and (max-width:990px) {
-    .ai-slack-heading{
-        font-size: 35px;
+    .galley-features-div{
+      padding-left: 20px !important;
     }
+      .ai-slack-heading {
+          font-size: 35px;
+      }
+
+      .harness-support-heading {
+          font-size: 40px;
+      }
+
+      .slack-chaos-btn-customer-stories-column {
+          justify-content: start;
+      }
+
+      .constumer-facing-team-heading {
+          font-size: 40px;
+      }
+
+      .gallery-slider-img{
+width: 100%;
+height: 100%;
+      }
+    .gallery-slider-img-div{
+        padding: 50px 0 0 50px ;
+    }
+
+    .gallery-slider-slide h5{
+        font-size: 17px !important;
+    }
+
   }
 
   @media screen and (max-width:770px) {
@@ -502,29 +756,60 @@ color: white;
           border-radius: 10px;
       }
 
-      .ai-slack-heading{
-        font-size: 30px;
-    }
+      .ai-slack-heading {
+          font-size: 30px;
+      }
 
-    .slack-chaos-card1{
-        align-items: center;
-        width: fit-content;
+      .slack-chaos-card1 {
+          align-items: center;
+          width: fit-content;
 
-    }
+      }
 
-    .slack-card-column{
-        display: contents;
-        
-    }
+      .slack-card-column {
+          display: contents;
 
-    .slack-chaos-heading{
-        text-align: center;
-        font-size: 40px;
-    }
+      }
 
-    .slack-chaos-btn-customer-stories-column{
-        justify-content: center;
-    }
+      .slack-chaos-heading {
+          text-align: center;
+          font-size: 40px;
+      }
+
+      .slack-chaos-btn-customer-stories {
+          padding: 17px 30px !important;
+          font-size: 15px;
+          font-weight: 400;
+
+      }
+
+      .slack-chaos-btn-customer-stories-column {
+          justify-content: center;
+      }
+
+      .harness-support-heading {
+          font-size: 30px;
+      }
+
+      .harness-mail-parent {
+          flex-direction: column;
+          gap: 10px;
+      }
+
+      .harness-input {
+          max-width: 100% !important;
+          border-radius: 10px;
+      }
+
+      .harness-input-btn {
+          width: 100%;
+          border-radius: 10px;
+      }
+
+      .constumer-facing-team-heading {
+          font-size: 30px;
+          font-weight: 600;
+      }
 
   }
 
@@ -569,9 +854,9 @@ color: white;
           font-size: 18px;
       }
 
-      .ai-slack-heading{
-        font-size: 25px;
-    }
+      .ai-slack-heading {
+          font-size: 25px;
+      }
 
   }
 
@@ -583,8 +868,12 @@ color: white;
           font-size: 40px;
       }
 
-      .slack-chaos-heading{
-        font-size: 30px
+      .slack-chaos-heading {
+          font-size: 30px
+      }
+
+      .slack-chaos-btn-customer-stories {
+          padding: 15px 15px !important;
       }
   }
 
@@ -612,6 +901,17 @@ color: white;
       .collab-card-text {
           font-size: 16px;
       }
+
+      .slide-parent {
+          padding: 20px 20px !important;
+      }
+
+      .card-collab-back-btn,
+      .card-collab-next-btn {
+          bottom: 25px;
+      }
+
+
   }
 
   @media screen and (max-width:395px) {

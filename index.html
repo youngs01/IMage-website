@@ -97,7 +97,8 @@
       </div>
       <div class="col-12 pt-4">
         <div class="d-flex align-items-center justify-content-center email-div-parent">
-          <input type="text" class="hero-input" id="heroInput" placeholder="Enter your work email">
+          <input type="text" class="hero-input" id="heroInput" placeholder="Enter your work email"
+            onkeypress="checkEnter()">
           <a href="#/" class="hero-input-btn" id="emailBtn" onclick="validateEmail()">Get started</a>
         </div>
       </div>
@@ -280,11 +281,11 @@
 
 
           <div class="col-12 col-lg-6 pt-5 pt-lg-0">
-            <div class="swiper mySwiper ">
-              <div class="swiper-wrapper position-relative ">
+            <div class="swiper mySwiper  swiper-card-slider">
+              <div class="swiper-wrapper position-relative card-slide-wrapper ">
 
                 <div class="swiper-slide position-relative ">
-                  <div class="w-100 h-100 p-5 d-flex flex-column gap-3 slide-parent">
+                  <div class="w-100 h-100 px-5 py-5  d-flex flex-column gap-3 slide-parent">
                     <p class="collab-card-text"> " Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Sint similique rem quo, distinctio quidem, officiis ipsa facere recusandae quibusdam ullam unde
                       illo iure voluptas ipsam necessitatibus facilis voluptatum magnam repellendus. "</p>
@@ -294,16 +295,33 @@
                     <div class="d-flex align-items-center gap-3 pt-2">
                       <div class=""><img src="Screenshot 2023-12-19 043750.png" alt="" class="collab-card-user-img">
                       </div>
-                      <div class="d-flex flex-column gap-1">
+                      <div class="d-flex flex-column">
                         <p class="collab-card-user-name ">Ryan Hoskin</p>
                         <p class="collab-card-user-work">VP customer Success</p>
                       </div>
                     </div>
                   </div>
                 </div>
-      
- 
-     
+
+                <div class="swiper-slide position-relative ">
+                  <div class="w-100 h-100 px-5 py-5  d-flex flex-column gap-3 slide-parent">
+                    <p class="collab-card-text"> " Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sint similique rem quo, distinctio quidem, officiis ipsa facere recusandae quibusdam ullam unde
+                      illo iure voluptas ipsam necessitatibus facilis voluptatum magnam repellendus. "</p>
+                    <div class="">
+                      <img src="collab-card-logo-incident.io-img.png" alt="" class="collab-card-img">
+                    </div>
+                    <div class="d-flex align-items-center gap-3 pt-2">
+                      <div class=""><img src="Screenshot 2023-12-19 043750.png" alt="" class="collab-card-user-img">
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p class="collab-card-user-name ">Ryan Hoskin</p>
+                        <p class="collab-card-user-work">VP customer Success</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
               <div class="card-collab-next-btn"><i class="fa-solid fa-chevron-right"></i></div>
               <div class="card-collab-back-btn"><i class="fa-solid fa-chevron-left"></i></div>
@@ -328,7 +346,7 @@
           <div class=" w-100 d-flex align-items-center justify-content-center">
             <div class="d-flex align-items-center w-100 justify-content-center slack-support-input-parent">
               <input type="text" class="slack-support-input py-3 px-3" placeholder="Enter your work email"
-                id="heroInput">
+                id="heroInput" onkeypress="checkEnter()">
               <a href="#/" class="slack-support-input-btn text-white py-3 px-5 text-center "
                 onclick="validateEmail()">Request a demo</a>
             </div>
@@ -430,33 +448,35 @@
       <div class="row">
         <div class="col-12 col-lg-8">
           <h1 class="slack-chaos-heading">
-            Learn how modern companies  <span class="d-none d-lg-block"></span> have solved Slack chaos
+            Learn how modern companies <span class="d-none d-lg-block"></span> have solved Slack chaos
           </h1>
         </div>
-        <div class="col-12 col-lg-4 d-flex align-items-end justify-content-end pt-3 pt-lg-0 slack-chaos-btn-customer-stories-column">
-          <a href="#/" class="slack-chaos-btn-customer-stories text-white d-flex align-items-center justify-content-center">Customers Stories</a>
+        <div class="col-12 col-lg-4 d-flex align-items-end   pt-3 pt-lg-0 slack-chaos-btn-customer-stories-column">
+          <a href="#/"
+            class="slack-chaos-btn-customer-stories text-white d-flex align-items-center justify-content-center">Customers
+            Stories</a>
         </div>
       </div>
-      <div class="row pt-5 justify-content-center gap-5 gap-md-0">
+      <div class="row pt-5 mt-0 mt-lg-5 justify-content-center gap-5 gap-md-0">
         <div class="col-12 col-md-6 col-lg-4 slack-card-column ">
           <div class="bg-white rounded-4 px-4 py-4 slack-chaos-card1 ">
-            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img" >
-             <h4 class="text-center slack-chaos-card-heading">3hrs</h4>
-             <p class="text-center slack-chaos-card-para">Daily individual time savings</p>
+            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img">
+            <h4 class="text-center slack-chaos-card-heading">3hrs</h4>
+            <p class="text-center slack-chaos-card-para">Daily individual time savings</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4  pt-5 pt-md-0 slack-card-column">
           <div class="bg-white rounded-4 px-4 py-4 slack-chaos-card1">
-            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img" >
-             <h4 class="text-center slack-chaos-card-heading">3hrs</h4>
-             <p class="text-center slack-chaos-card-para">Daily individual time savings</p>
+            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img">
+            <h4 class="text-center slack-chaos-card-heading">95%</h4>
+            <p class="text-center slack-chaos-card-para">Reduce responce time</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4  pt-5 pt-lg-0 slack-card-column">
           <div class="bg-white rounded-4 px-4 py-4 slack-chaos-card1">
-            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img" >
-             <h4 class="text-center slack-chaos-card-heading">3hrs</h4>
-             <p class="text-center slack-chaos-card-para">Daily individual time savings</p>
+            <img src="slackchaos-img1.png" alt="" class="rounded-5 slack-chaos-card1-img">
+            <h4 class="text-center slack-chaos-card-heading">2X</h4>
+            <p class="text-center slack-chaos-card-para">increase in efficiency</p>
           </div>
         </div>
       </div>
@@ -465,12 +485,136 @@
 
 
 
+  <div class="container pt-5 mt-5">
+    <div class="harness-support-bg">
+      <div class="row py-5 px-3 px-md-5">
+        <div class="col-12 justify-content-center d-flex text-center align-items-center">
+          <h1 class="harness-support-heading">Harness the full potential <span class="d-none d-lg-block"></span>
+            of slack based support</h1>
+        </div>
+        <div class="col-12 justify-content-center d-flex text-center align-items-center pt-3">
+          <div class="d-flex align-items-center w-100 justify-content-center text-center harness-mail-parent">
+            <input type="text" placeholder="Enter your work email" class="harness-input" id="heroInput"
+              onkeydown="checkEnter()">
+            <a href="#/" class="harness-input-btn" onclick="validateEmail()">Request a demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
+  <div class="container-fluid pt-5 px-0">
+    <div class="costumer-facing-team-bg py-5 px-3 px-md-0">
+      <div class="container py-0 py-md-5 ">
+        <div class="row py-5">
+          <div class="col-12">
+            <div class="w-100 d-flex justify-content-center text-center">
+              <h1 class="constumer-facing-team-heading">Built for all costumer-facing teams</h1>
+            </div>
+          </div>
+
+          <div class="col-12 pt-5 px-0 px-lg-5">
+            <div class="px-0 px-lg-5">
+              <div thumbsSlider="" class="swiper mySwiper3  myswiper-gallery-slider ">
+                <div class="swiper-wrapper" style="">
+                  <div class="swiper-slide  gallery-slider-slide">
+                    <h5 class="text-white ">Costumer Success</h5>
+                  </div>
+                  <div class="swiper-slide  gallery-slider-slide rounded-0">
+                    <h5 class="text-white">Support</h5>
+                  </div>
+                  <div class="swiper-slide gallery-slider-slide rounded-0">
+                    <h5 class="text-white">Product </h5>
+
+                  </div>
+                  <div class="swiper-slide gallery-slider-slide slider-end-border rounded-0">
+                    <h5 class="text-white">Marketing</h5>
+                  </div>
+                </div>
+              </div>
+              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper4 ">
+                <div class="swiper-wrapper  ">
+                  <div class="swiper-slide  gallery-slider-slide-content rounded-0 bg-transparent m-0 w-100 ">
+                    <div class="row w-100  pt-5">
+                      <div class="col-12 col-lg-5  px-4 pb-0 pb-lg-5 galley-features-div">
+                        <div class="d-flex flex-column gap-5">
+                          <div class="d-flex flex-column gap-2">
+                            <h4 class="gallery-slider-heading">Including Feature</h4>
+                            <p class="gallery-slider-para"><i class="fa-solid fa-check"></i>No More tagging.</p>
+                            <p class="gallery-slider-para"><i class="fa-solid fa-check"></i>Supercharge your
+                              productivity.</p>
+                            <p class="gallery-slider-para"><i class="fa-solid fa-check"></i>Identify customer sentiment
+                            </p>
+                          </div>
+                          <a href="#/" class="gallery-slider-btn">Add to Slack <img src="slack-img.png" alt=""></a>
+                          <p class="gallery-slider-para-demo"> OR <span> Request a demo </span> <i
+                              class="fa-solid fa-chevron-right"></i> </p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-7  p-0 m-0 pt-2">
+                    <div class="gallery-slider-img-div h-100">
+                      <img src="img-gallery-slider.png" aria-colspan="gallery-slider-img">
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide gallery-slider-slide-content bg-transparent">
+        
+                  </div>
+                  <div class="swiper-slide gallery-slider-slide-content bg-transparent ">
+
+                  </div>
+                  <div class="swiper-slide gallery-slider-slide-content bg-transparent ">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+<!-- <div class="container-fluid px-5 slack-conversatin-bg py-5">
+  <div class="container pt-0 pt-md-5 px-5 px-md-0">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center slack-conversation-heading">Integrate Slack conversations with your <span class="d-none d-lg-block"></span>
+         preferred internal tools</h1>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-12 justify-content-center w-100 d-flex text-center">
+        <a href="#/" class="slack-conversation-hero-btn">View all integrations</a>
+      </div>
+    </div>
+    <div class="row pt-5 position-relative gap-3 px-5">
+      <div class="col-3">
+        <div class="slack-conversation-supporter d-flex flex-column align-items-center justify-content-center text-center gap-3 px-4 py-5">
+<div class="">
+  <img src="slack-conversation-supporter.png" alt="" class="slack-conversation-supporter-img">
+</div>
+<div class=" d-flex flex-column justify-content-center align-items-center text-center gap-2 ">
+  <p class="slack-conversation-supporter-tag m-0 p-0">Support</p>
+<h1 class="slack-conversation-supporter-heading d-flex align-items-center m-0 p-0">Zendesk <i class="fa-sharp fa-solid fa-arrow-right"></i></h1>
+  
+</div>
+</div>
+      </div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      
+<div class="slack-conversation-div-med">
 
+</div>
+    </div>
+  </div>
+</div>
+ -->
 
 
 
@@ -501,24 +645,9 @@
   <br><br><br><br><br><br><br><br><br><br>
 
 </body>
-<script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
+<script src="index.js"></script>
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".card-collab-next-btn",
-      prevEl: ".card-collab-back-btn",
-    },
-  });
 
 </script>
 
