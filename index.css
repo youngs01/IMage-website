@@ -540,12 +540,12 @@ gallery slider inicialize here
     height: fit-content;
     display: flex;
     align-items: end;
+    cursor: pointer;
 }
 .gallery-slider-slide h5 {
     font-weight: 450;
     padding: 10px 0;
 }
-.gallery-slider-slide-content {}
 .gallery-slider-heading {
     color: #A4A5AE;
     text-transform: uppercase;
@@ -609,13 +609,20 @@ gallery slider inicialize here
 .slack-conversation-div-med {
       width: 100%;
       height: 150px;
-
+position: absolute;
+bottom: -50px;
+left: 0;
+z-index: -1;
       border-radius: 20px;
      background-color: rgba(128, 128, 128, 0.075);
 }
 
+.galley-features-div{
+    border-radius: 10px 10px 10px 10px !important;
+}
+
 .slack-conversatin-bg{
-    background-color: rgba(128, 128, 128, 0.062);
+    background-color: rgba(128, 128, 128, 0.068);
 }
 
 .slack-conversation-supporter{
@@ -630,16 +637,27 @@ gallery slider inicialize here
 
 .slack-conversation-supporter-tag{
 text-transform: uppercase;
-font-size: 13pxs;
+font-size: 12px;
+background-color: rgba(128, 128, 128, 0.123);
+color: black;
+font-weight: 400;
+padding: 4px 13px ;
+border-radius: 30px;
 }
 
 .slack-conversation-supporter-heading{
     font-size: 25px;
+    gap: 7px;
     font-weight: 600;
 }
 
 .slack-conversation-supporter-heading i{
-    font-size: 15px;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    transform: rotate(315deg);
 }
 
 
@@ -647,6 +665,73 @@ font-size: 13pxs;
     padding-left: 40px !important;
 }
 
+.slack-suporter-buttons-prarent{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 
+                           1fr 1fr 1fr
+                           1fr 1fr 1fr;
+     grid-column-gap: 20px;
+     align-items: center;
+     justify-content: center; */
+
+    }
+
+.slack-supporter-buttons-img{
+    border-radius: 10px;
+    max-width: 80px;
+    height:80px;
+
+}
+
+.security-bg{
+    background-color:#030526 ;
+    width: 1200px;    
+    border-radius: 30px 30px 0 0;
+}
+
+.security-heading{
+    color: white;
+    font-weight:600;
+    text-align: center;
+    font-size: 60px;
+}
+
+.security-parent{
+    padding-top: 150px;
+
+}
+
+.security-para{
+    font-size: 20px;
+    color: white;
+}
+
+.security-img{
+    max-width: 120px;
+}
+
+.security-link{
+    color: white;
+    gap: 7px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.security-link i{
+    text-decoration: none;
+    font-size: 15px;
+    transform: rotate(315deg);
+}
+
+.security-link-icon{
+    color: white;
+    transform: rotate(315deg);
+}
+
+.row{
+    width: 100%;
+}
 
 
   @media screen and (max-width:1400px) {
@@ -730,11 +815,53 @@ height: 100%;
         font-size: 17px !important;
     }
 
+    .slack-suporter-buttons-prarent{
+        display: grid;
+        grid-template-columns: 1fr 1fr  
+                               1fr ;
+         grid-column-gap: 20px;
+         grid-row-gap: 20px;
+         align-items: center;
+         justify-content: center;
+    
+        }
+
+        .security-heading{
+            font-size: 40px;
+        }
+        .security-para{
+            font-size: 16px;
+        }
+
+        .security-link{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .security-link-icon{
+            font-size: 13px;
+        }
+
+        .security-img{
+            max-width: 100px;
+        }
+
+  }
+
+  @media screen and (max-width:900px) {
+    .slack-conversation-heading{
+        font-size: 40px !important;
+    }
+
+    .slack-conversation-hero-btn{
+        font-size: 15px;
+        padding: 20px 30px;
+    }
+
   }
 
   @media screen and (max-width:770px) {
       .hero-heading {
-          font-size: 50px;
+          font-size: 40px;
       }
 
       .collab-card-text {
@@ -811,6 +938,29 @@ height: 100%;
           font-weight: 600;
       }
 
+      .slack-conversation-heading{
+        font-size: 30px !important;
+    }
+
+    .security-heading{
+        font-size: 20px;
+    }
+    .security-para{
+        font-size: 13px;
+    }
+
+    .security-link{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .security-link-icon{
+        font-size: 10px;
+    }
+
+    .security-img{
+        max-width: 70px;
+    }
+
   }
 
   @media screen and (max-width:768px) {
@@ -830,6 +980,18 @@ height: 100%;
           font-size: 12px;
       }
 
+  }
+
+  @media screen and (max-width:635px) {
+    .slack-conversation-heading{
+        font-size: 25px !important;
+    }
+    .slack-conversation-hero-btn{
+        font-size: 15px;
+        padding: 12px 25px;
+        font-size: 13px;
+        
+    }
   }
 
   @media screen and (max-width:500px) {
@@ -860,7 +1022,23 @@ height: 100%;
 
   }
 
-  @media screen and (max-width:577px) {}
+  @media screen and (max-width:577px) {
+    .slack-conversation-heading{
+        font-size: 25px !important;
+    }
+    .slack-conversation-hero-btn{
+        padding: 16px 20px;
+    }
+
+    .hero-heading{
+        font-size: 35px
+    }
+
+    .hero-para{
+        font-size: 1px;
+    }
+
+  }
 
 
   @media screen and (max-width:470px) {
@@ -895,12 +1073,17 @@ height: 100%;
           text-align: center;
           justify-content: center;
       }
+
+      .constumer-facing-team-heading{
+        font-size: 20px;
+      }
+
   }
 
   @media screen and (max-width:400px) {
       .collab-card-text {
           font-size: 16px;
-      }
+      }z
 
       .slide-parent {
           padding: 20px 20px !important;
