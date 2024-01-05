@@ -18,18 +18,49 @@
       font-family: 'Roboto', sans-serif;
   }
 
-  /* .navbar-logo{
-
-} */
-
   .alert-close-btn-icon:focus {
       display: none;
+  }
+
+  .fs-18 {
+      font-size: 18px;
+  }
+
+  .text-gray {
+      color: #9FA1AA;
+  }
+
+  .radius-left {
+      border-radius: 10px 0 0 10px;
+  }
+
+  .radius-right {
+      border-radius: 0 10px 10px 0;
+  }
+
+  .outline-none {
+      outline: none;
+  }
+
+  .bg-purple {
+      background-color: #7A00FF;
+  }
+
+  .fs-20 {
+      font-size: 20px;
+  }
+
+  .fw-600 {
+      font-weight: 600;
+  }
+
+  .fw-500 {
+      font-weight: 500;
   }
 
   img {
       width: 100%;
   }
-
 
   .hero-alert {
       background: linear-gradient(to right, #6B40E7,
@@ -47,17 +78,13 @@
   }
 
   .navbar-btn-parent {
-      display: flex;
-      align-items: center;
       gap: 15px;
       margin-right: 55px;
   }
 
   .navbar-btn {
-      display: flex;
-      align-items: center;
       gap: 5px;
-      font-weight: 500;
+
       text-transform: capitalize;
       letter-spacing: 0.5px;
   }
@@ -74,8 +101,7 @@
   }
 
   .navbar-slack {
-      display: flex;
-      align-items: center;
+
       gap: 10px;
       border: 1px solid transparent;
       border-radius: 5px;
@@ -87,973 +113,126 @@
       max-width: 25px;
   }
 
-  .navbar-brand-btn-parent {
-      /* background-color:peachpuff; */
-      width: 100%;
-
-
-
-  }
-
   .navbar-demo {
       background-color: #7A00FF;
-      color: white;
-      font-weight: 500;
       padding: 10px 15px;
       border-radius: 7px;
   }
 
   .navbar-login-btn-responsive {
       background-color: #6A4AE9;
-      color: white;
       padding: 13px 30px;
-      font-size: 18px;
       border-radius: 7px;
-
       position: absolute;
       top: 0;
       right: 80px;
   }
 
-  .hero-heading {
+  .pt-60 {
+      padding-top: 60px;
+  }
+
+  .fs-60 {
       font-size: 60px;
-      font-weight: 900;
   }
 
-  .hero-para {
-      font-size: 20px;
-      color: #404040;
+  .ls-05 {
+      letter-spacing: 0.7px;
   }
 
-
-  .text-gray {
-      color: rgb(150, 150, 150) !important;
+  .fw-800 {
+      font-weight: 800;
   }
 
-  .hero-input {
-      border: 1px solid white;
-      width: 100%;
-      padding: 20px 30px;
-      max-width: 320px;
-      outline: none;
-      box-shadow: 2px 0px 20px -10px;
-      border-radius: 10px 0 0 10px;
-      font-weight: 400;
-  }
-
-  .hero-input::placeholder {
-      color: #797979;
-      font-weight: 500;
-  }
-
-  .hero-input-btn {
-      background-color: #6A4AE9;
-      color: white;
-      font-size: 18px;
-      font-weight: 500;
-      padding: 20px 30px;
-      border-radius: 0 10px 10px 0;
-  }
-
-  .hero-g2-logo {
-      max-width: 20px;
-  }
-
-  .fa-solid {
-      display: flex;
-      align-items: center;
-  }
-
-  .hero-g2-star {
-      font-size: 15px;
-      color: orangered;
-  }
-
-  .hero-play-icon-btn {
-      color: white;
-      background-color: black;
-      font-size: 7px;
-      padding: 7px 8px;
-      border-radius: 100px;
-  }
-
-  .hero-play-text-btn {
-      color: #494B5E;
-      text-decoration: underline;
-      font-weight: 500;
-      font-size: 17px;
-  }
-
-  .gradient-bg {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      /* height: 100%; */
-      height: 100%;
-      left: 0;
-  }
-
-  .mixpanel-logo {
-      max-width: 150px;
-      opacity: 0.8;
-  }
-
-  .text-collab-heading {
-      font-size: 30px;
-      font-weight: 600;
-      background-image:
-          linear-gradient(to right, #B37AEC, #FDFCFF, #DDC0F7);
-      /* Adjust the gradient colors */
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-  }
-
-
-  .g2-bages-img {
-      max-width: 100px !important;
-  }
-
-  .gradient-bg-parent {
-      margin-top: 330px;
-  }
-
-  .hero-img {
-      margin-top: -400px;
-  }
-
-  .g2-star {
-      color: #EF492D;
-
-  }
-
-  .g2-text {
-      color: white;
-      font-weight: 500;
-      font-size: 15px;
-      text-align: center;
-      justify-content: center;
-
+  .py-20 {
+      padding-top: 20px;
+      padding-bottom: 20px;
   }
 
 
 
 
-  .swiper {
-      width: 100%;
-      height: 100%;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  img {
+      animation: fadeup 1s;
   }
 
-  .swiper-card-slider {
-      border-radius: 20px;
+  .fadeup {
+      animation: fadeUP 1s;
   }
 
-  .swiper-slide {
-      border-radius: 20px;
-      font-size: 18px;
-      background: rgba(255, 255, 255, 0.493);
-      display: flex;
-      justify-content: center;
-  }
+  @keyframes fadeUP {
+      0% {
+          opacity: 0;
+          transform: translateY(30px) scale(0.9);
+      }
 
-  .card-slide-wrapper {
-      width: 100%;
-      gap: 1px;
-      border-radius: 20px;
-  }
-
-  .swiper-button-lock {
-      display: block;
-  }
-
-  .card-collab-next-btn {
-      color: #7C03FF;
-      background-color: white;
-      padding: 10px 13px;
-      border-radius: 100px;
-      position: absolute;
-      bottom: 50px;
-      right: 20px;
-      z-index: 100;
-      font-size: 15px;
-
-  }
-
-  .card-collab-back-btn {
-      color: #7C03FF;
-      background-color: white;
-      padding: 10px 13px;
-      border-radius: 100px;
-      position: absolute;
-      bottom: 50px;
-      right: 70px;
-      z-index: 100;
-  }
-
-  .collab-card-text {
-      font-size: 23px;
-      font-weight: 300;
-  }
-
-  .collab-card-img {
-      max-width: 170px;
-  }
-
-  .collab-card-user-img {
-      max-width: 60px;
-      border-radius: 10px;
-  }
-
-  .collab-card-user-name {
-      font-size: 15px;
-  }
-
-  .collab-card-user-work {
-      font-size: 13px;
-  }
-
-  .slack-support-parent {
-      background: linear-gradient(to bottom, #251B48, #3A1477);
-
-      height: 100%;
-      border-radius: 30px;
-
+      100% {
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+      }
   }
 
 
-  .slack-support-heading {
-      font-weight: 600;
-  }
-
-  .slack-support-input {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px 0 0 10px;
-      border: 0;
-      outline: none;
-      font-size: 18px;
-      padding: 20px 20px !important;
-
-  }
-
-  .slack-support-input-btn {
-      background-color: #7A00FF;
-      border-radius: 0 10px 10px 0;
-      font-weight: 500;
-      font-size: 18px;
-      padding: 20px 30px !important;
-
-  }
-
-  .ai-slack-heading {
-      font-size: 50px;
-      font-weight: 600;
-  }
-
-  .ai-slack-bg {
-      background: linear-gradient(to bottom, #FBFBFB, #F9F9F9, #F8F8F8);
-  }
-
-  .ai-slack-card-parent {
-      background-color: white;
-      border-radius: 20px;
-
-  }
-
-  .ai-slack-card1-key {
-      color: #881BFF;
-      text-transform: uppercase;
-      font-weight: 600;
-  }
-
-  .ai-slack-card1-heading {
-      font-weight: 600;
-  }
-
-  .ai-slack-card1-para {
-      color: #686A78;
-      font-size: 16px;
-  }
-
-  .ai-slack-card1-btn {
-      color: #6b6464;
-      font-weight: 500;
-
-  }
-
-  .ai-slack-talk-specialist-btn {
-      background-color: #7A00FF;
-      padding: 15px 30px;
-      border-radius: 10px;
-      font-weight: 500;
-      color: white;
-  }
-
-  .ai-slack-talk-specialist-btn img {
-      max-width: 60px;
-  }
-
-  .slack-chaos-heading {
-      font-weight: 600;
-      font-size: 50px;
-  }
-
-  .slack-chaos-btn-customer-stories {
-      background-color: #7A00FF;
-      padding: 20px 40px;
-      font-weight: 500;
-      letter-spacing: 0.6px;
-      font-size: 18px;
-      border-radius: 12px;
-  }
-
-  .slack-chaos-card1 {
-      box-shadow: 1px 1px 50px 1px rgb(185, 185, 185);
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
-
-  }
-
-  .slack-chaos-card1-img {
-      width: auto;
-      height: auto;
-  }
-
-  .slack-chaos-card-heading {
-      background: linear-gradient(to bottom, #8606fd 50%, #C83BFF 50%);
-      color: transparent;
-      -webkit-background-clip: text;
-      font-size: 50px;
-      font-weight: 900;
-  }
-
-  .slack-chaos-card-para {
-      font-size: 25px;
-  }
-
-  .harness-support-bg {
-      border-radius: 20px;
-      background: linear-gradient(to right, #A54BE5, #560EAF 50%, #851CE0);
-  }
-
-  .harness-support-heading {
-      color: white;
-      font-weight: 700;
-      font-size: 50px;
-  }
-
-  .harness-input {
-      font-size: 20px;
-      padding: 20px 20px;
-      width: 100%;
-      max-width: 350px;
-      border: 0;
-      border-radius: 10px 0 0 10px;
-      outline: none;
-  }
-
-  .harness-input-btn {
-      background-color: #7A00FF;
-      padding: 20px 20px;
-      font-size: 20px;
-      color: white;
-      border-radius: 0 10px 10px 0;
-  }
-
-  .slack-chaos-btn-customer-stories-column {
-      justify-content: end;
-  }
-
-  .costumer-facing-team-bg {
-      background-color: #030526;
-  }
-
-  .constumer-facing-team-heading {
-      color: white;
-      font-weight: 600;
-      font-size: 50px;
-
-  }
 
 
-  /*
-gallery slider inicialize here
-*/
-  /* 
-.swiper-slide {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-
-  .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-/* .swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-.swiper-slide {
-    background-size: cover;
-    background-position: center;
-}
-.myswiper-gallery-slider {
-    width: 100%;
-}
-.mySwiper4 {
-    height: 100%;
-    width: 100%;
-    background-color: #1B1E35;
-}
-.mySwiper3 {
-    box-sizing: border-box;
-    height: fit-content;
-}
-.mySwiper3 .swiper-slide {
-    width: 25%;
-}
-.mySwiper3 .swiper-slide-thumb-active {
-    background-color: #121329;
-    border-bottom: 2px solid #7A00FF;
-}
-/* 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-.slider-end-border {
-    border-radius: 0px 10px 0 0 !important;
-}
-.gallery-slider-slide {
-    border-bottom: 1px solid transparent;
-    background-color: #14162F;
-    border-radius: 10px 0 0 0;
-    height: fit-content;
-    display: flex;
-    align-items: end;
-    cursor: pointer;
-}
-.gallery-slider-slide h5 {
-    font-weight: 450;
-    padding: 10px 0;
-}
-.gallery-slider-heading {
-    color: #A4A5AE;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-.gallery-slider-para {
-    display: flex;
-    color: white;
-    align-items: center;
-    font-weight: 300;
-    gap: 20px;
-    font-size: 20px;
-}
-.gallery-slider-btn {
-    background-color: #7A00FF;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    padding: 10px 30px;
-    border-radius: 10px;
-    color: white;
-    font-weight: 500;
-    gap: 15px;
-}
-.gallery-slider-btn img {
-    max-width: 40px;
-    background-color: white;
-    padding: 5px 5px;
-    border-radius: 5px;
-}
-.gallery-slider-img{
-    width: 100%;
-    height: 100%;
-}
-.gallery-slider-para-demo {
-    color: #92939E;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.gallery-slider-para-demo span {
-    text-decoration: underline;
-}
-.gallery-slider-para-demo i {
-    font-size: 12px;
-}
-.slack-conversation-heading {
-    font-size: 50px;
-    font-weight: 700;
-    color: black;
-}
-.slack-conversation-hero-btn {
-    background-color: #7A00FF;
-    color: white;
-    padding: 20px 40px;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: 500;
-}
-.slack-conversation-div-med {
-      width: 100%;
-      height: 150px;
-position: absolute;
-bottom: -50px;
-left: 0;
-z-index: -1;
-      border-radius: 20px;
-     background-color: rgba(128, 128, 128, 0.075);
-}
-
-.galley-features-div{
-    border-radius: 10px 10px 10px 10px !important;
-}
-
-.slack-conversatin-bg{
-    background-color: rgba(128, 128, 128, 0.068);
-}
-
-.slack-conversation-supporter{
-    background-color: white;
-    border-radius: 10px;
-
-}
-
-.slack-conversation-supporter-img{
-    max-width: 60px;
-}
-
-.slack-conversation-supporter-tag{
-text-transform: uppercase;
-font-size: 12px;
-background-color: rgba(128, 128, 128, 0.123);
-color: black;
-font-weight: 400;
-padding: 4px 13px ;
-border-radius: 30px;
-}
-
-.slack-conversation-supporter-heading{
-    font-size: 25px;
-    gap: 7px;
-    font-weight: 600;
-}
-
-.slack-conversation-supporter-heading i{
-    font-size: 10px;
-    padding: 5px;
-    border-radius: 50px;
-    color: white;
-    background-color: black;
-    transform: rotate(315deg);
-}
 
 
-.galley-features-div{
-    padding-left: 40px !important;
-}
 
-.slack-suporter-buttons-prarent{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 
-                           1fr 1fr 1fr
-                           1fr 1fr 1fr;
-     grid-column-gap: 20px;
-     align-items: center;
-     justify-content: center; */
 
+
+
+
+
+
+
+
+@media screen and (max-width:990px){
+    .fs-60{
+        font-size: 50px;
     }
 
-.slack-supporter-buttons-img{
-    border-radius: 10px;
-    max-width: 80px;
-    height:80px;
-
-}
-
-.security-bg{
-    background-color:#030526 ;
-    width: 1200px;    
-    border-radius: 30px 30px 0 0;
-}
-
-.security-heading{
-    color: white;
-    font-weight:600;
-    text-align: center;
-    font-size: 60px;
-}
-
-.security-parent{
-    padding-top: 150px;
-
-}
-
-.security-para{
-    font-size: 20px;
-    color: white;
-}
-
-.security-img{
-    max-width: 120px;
-}
-
-.security-link{
-    color: white;
-    gap: 7px;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-.security-link i{
-    text-decoration: none;
-    font-size: 15px;
-    transform: rotate(315deg);
-}
-
-.security-link-icon{
-    color: white;
-    transform: rotate(315deg);
-}
-
-.row{
-    width: 100%;
-}
-
-
-  @media screen and (max-width:1400px) {
-
-      .navbar-btn-parent {
-          flex-direction: column;
-          margin-right: 0px !important;
-      }
-
-      .navbar-brand-btn-parent {
-          padding-top: 30px;
-
-          justify-content: center;
-          text-align: center;
-      }
-
-  }
-
-  @media screen and (max-width:1200px) {
-      .mixpanel-logo {
-          max-width: 120px;
-      }
-
-      .hero-img {
-          margin-top: -350px;
-      }
-
-      .gradient-bg-parent {
-          margin-top: 280px;
-      }
-
-      .gallery-slider-para {
- font-size: 17px;
+    .fs-20{
+        font-size: 17px;
     }
 
-    .gallery-slider-para i{
-        font-size: 15px;
+    .py-20{
+        padding-top: 17px;
+        padding-bottom: 17px;
     }
 
-  }
+}
 
-  @media screen and (max-width:992px) {
-      .hero-img {
-          margin-top: -300px;
-      }
-
-      .gradient-bg-parent {
-          margin-top: 220px;
-      }
-  }
-
-  @media screen and (max-width:990px) {
-    .galley-features-div{
-      padding-left: 20px !important;
+@media screen and (max-width:770px) {
+    .fs-60{
+  font-size: 40px;
     }
-      .ai-slack-heading {
-          font-size: 35px;
-      }
-
-      .harness-support-heading {
-          font-size: 40px;
-      }
-
-      .slack-chaos-btn-customer-stories-column {
-          justify-content: start;
-      }
-
-      .constumer-facing-team-heading {
-          font-size: 40px;
-      }
-
-      .gallery-slider-img{
-width: 100%;
-height: 100%;
-      }
-    .gallery-slider-img-div{
-        padding: 50px 0 0 50px ;
-    }
-
-    .gallery-slider-slide h5{
-        font-size: 17px !important;
-    }
-
-    .slack-suporter-buttons-prarent{
-        display: grid;
-        grid-template-columns: 1fr 1fr  
-                               1fr ;
-         grid-column-gap: 20px;
-         grid-row-gap: 20px;
-         align-items: center;
-         justify-content: center;
     
-        }
-
-        .security-heading{
-            font-size: 40px;
-        }
-        .security-para{
-            font-size: 16px;
-        }
-
-        .security-link{
-            font-size: 15px;
-            font-weight: 500;
-        }
-        .security-link-icon{
-            font-size: 13px;
-        }
-
-        .security-img{
-            max-width: 100px;
-        }
-
-  }
-
-  @media screen and (max-width:900px) {
-    .slack-conversation-heading{
-        font-size: 40px !important;
+    .fs-20{
+        font-size: 16px;
     }
+}  
 
-    .slack-conversation-hero-btn{
-        font-size: 15px;
-        padding: 20px 30px;
+@media screen and (max-width:576px) {
+    .w-100-576{
+        width: 100%;
     }
-
-  }
-
-  @media screen and (max-width:770px) {
-      .hero-heading {
-          font-size: 40px;
-      }
-
-      .collab-card-text {
-          font-size: 20px;
-      }
-
-      .slack-support-input-parent {
-          flex-direction: column;
-          gap: 10px;
-      }
-
-      .slack-support-input {
-          max-width: 100% !important;
-          border-radius: 10px;
-      }
-
-      .slack-support-input-btn {
-          width: 100% !important;
-          border-radius: 10px;
-      }
-
-      .ai-slack-heading {
-          font-size: 30px;
-      }
-
-      .slack-chaos-card1 {
-          align-items: center;
-          width: fit-content;
-
-      }
-
-      .slack-card-column {
-          display: contents;
-
-      }
-
-      .slack-chaos-heading {
-          text-align: center;
-          font-size: 40px;
-      }
-
-      .slack-chaos-btn-customer-stories {
-          padding: 17px 30px !important;
-          font-size: 15px;
-          font-weight: 400;
-
-      }
-
-      .slack-chaos-btn-customer-stories-column {
-          justify-content: center;
-      }
-
-      .harness-support-heading {
-          font-size: 30px;
-      }
-
-      .harness-mail-parent {
-          flex-direction: column;
-          gap: 10px;
-      }
-
-      .harness-input {
-          max-width: 100% !important;
-          border-radius: 10px;
-      }
-
-      .harness-input-btn {
-          width: 100%;
-          border-radius: 10px;
-      }
-
-      .constumer-facing-team-heading {
-          font-size: 30px;
-          font-weight: 600;
-      }
-
-      .slack-conversation-heading{
-        font-size: 30px !important;
+    .fs-60{
+        font-size: 35px;
     }
-
-    .security-heading{
-        font-size: 20px;
+    .radius-10{
+        border-radius: 10px;
     }
-    .security-para{
-        font-size: 13px;
-    }
+}
 
-    .security-link{
-        font-size: 13px;
-        font-weight: 500;
-    }
-    .security-link-icon{
-        font-size: 10px;
-    }
-
-    .security-img{
-        max-width: 70px;
-    }
-
-  }
-
-  @media screen and (max-width:768px) {
-      .hero-img {
-          margin-top: -230px;
-      }
-
-      .gradient-bg-parent {
-          margin-top: 150px;
-      }
-
-  }
-
-  @media screen and (max-width:800px) {
-
-      .hero-alert-text {
-          font-size: 12px;
-      }
-
-  }
-
-  @media screen and (max-width:635px) {
-    .slack-conversation-heading{
-        font-size: 25px !important;
-    }
-    .slack-conversation-hero-btn{
-        font-size: 15px;
-        padding: 12px 25px;
-        font-size: 13px;
-        
-    }
-  }
-
-  @media screen and (max-width:500px) {
-
-      .email-div-parent {
-          flex-direction: column;
-      }
-
-      .hero-input {
-          border-radius: 10px;
-          max-width: 100%;
-
-      }
-
-      .hero-input-btn {
-          width: 100%;
-          text-align: center;
-          border-radius: 10px;
-      }
-
-      .collab-card-text {
-          font-size: 18px;
-      }
-
-      .ai-slack-heading {
-          font-size: 25px;
-      }
-
-  }
-
-  @media screen and (max-width:577px) {
-    .slack-conversation-heading{
-        font-size: 25px !important;
-    }
-    .slack-conversation-hero-btn{
-        padding: 16px 20px;
-    }
-
-    .hero-heading{
-        font-size: 35px
-    }
-
-    .hero-para{
-        font-size: 1px;
-    }
-
-  }
-
-
-  @media screen and (max-width:470px) {
-      .hero-heading {
-          font-size: 40px;
-      }
-
-      .slack-chaos-heading {
-          font-size: 30px
-      }
-
-      .slack-chaos-btn-customer-stories {
-          padding: 15px 15px !important;
-      }
-  }
 
 
   @media screen and (max-width:450px) {
@@ -1074,32 +253,5 @@ height: 100%;
           justify-content: center;
       }
 
-      .constumer-facing-team-heading{
-        font-size: 20px;
-      }
 
-  }
-
-  @media screen and (max-width:400px) {
-      .collab-card-text {
-          font-size: 16px;
-      }z
-
-      .slide-parent {
-          padding: 20px 20px !important;
-      }
-
-      .card-collab-back-btn,
-      .card-collab-next-btn {
-          bottom: 25px;
-      }
-
-
-  }
-
-  @media screen and (max-width:395px) {
-      .hero-g2-parent {
-          flex-direction: column;
-          gap: 10px !important;
-      }
   }
