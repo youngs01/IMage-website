@@ -223,7 +223,12 @@ max-height: 535px;
 
 
 
-
+@media screen and (max-width:1200px) {
+    .best-practise-img{
+        max-height: 100%;
+        }
+        
+}
 
   @media screen and (max-width:990px) {
       .fs-60 {
