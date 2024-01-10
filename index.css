@@ -23,7 +23,7 @@
   }
 
   .fs-18 {
-      font-size: 18px;
+      font-size: 18px ;
   }
 
   .text-gray {
@@ -50,10 +50,6 @@
       font-size: 20px;
   }
 
-  .fw-600 {
-      font-weight: 600;
-  }
-
   .fw-500 {
       font-weight: 500;
   }
@@ -63,36 +59,15 @@
   }
 
   .hero-alert {
-      background: linear-gradient(to right, #6B40E7,
-              #60A7F8, #9C6DF4, #7F09FF, #DBA6C3);
-  }
-
-  .hero-alert-text {
-      font-weight: 700;
-      letter-spacing: 0.5px;
+      background: linear-gradient(to right, #6B40E7, #60A7F8, #9C6DF4, #7F09FF, #DBA6C3);
   }
 
   .hero-alert-text i {
       font-size: 15px;
-
-  }
-
-  .navbar-btn-parent {
-      gap: 15px;
-      margin-right: 55px;
-  }
-
-  .navbar-btn {
-      gap: 5px;
-
-      text-transform: capitalize;
-      letter-spacing: 0.5px;
   }
 
   .navbar-btn i {
       font-size: 10px;
-      color: #201926;
-
   }
 
   .navbar-login {
@@ -100,31 +75,19 @@
       font-weight: 400;
   }
 
-  .navbar-slack {
-
-      gap: 10px;
-      border: 1px solid transparent;
-      border-radius: 5px;
-      padding: 10px 20px;
-      box-shadow: 2px 0px 20px -10px;
-  }
-
   .navbar-slack img {
       max-width: 25px;
   }
 
-  .navbar-demo {
+  .web-color {
       background-color: #7A00FF;
-      padding: 10px 15px;
-      border-radius: 7px;
+  }
+
+  .web-text{
+      color: #7A00FF;
   }
 
   .navbar-login-btn-responsive {
-      background-color: #6A4AE9;
-      padding: 13px 30px;
-      border-radius: 7px;
-      position: absolute;
-      top: 0;
       right: 80px;
   }
 
@@ -132,16 +95,16 @@
       padding-top: 60px;
   }
 
+  .fs-14{
+    font-size: 14px;
+  }
+
   .fs-60 {
       font-size: 60px;
   }
 
-  .ls-05 {
-      letter-spacing: 0.7px;
-  }
-
-  .fw-800 {
-      font-weight: 800;
+  .bg-gray{
+   background-color: #F8F8F8;
   }
 
   .py-20 {
@@ -149,89 +112,202 @@
       padding-bottom: 20px;
   }
 
-
-
-
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  a,
-  p,
-  img {
-      animation: fadeup 1s;
+  .g2-color {
+      color: #EF4729 !important;
   }
 
-  .fadeup {
-      animation: fadeUP 1s;
+  .fs-24 {
+      font-size: 24px;
   }
 
-  @keyframes fadeUP {
-      0% {
-          opacity: 0;
-          transform: translateY(30px) scale(0.9);
-      }
+  .w-60 {
+      max-width: 60px !important;
+  }
 
-      100% {
-          opacity: 1;
-          transform: translateY(0px) scale(1);
-      }
+  .hero-section .fa-play {
+      font-size: 7px;
+  }
+
+  .fs-50{
+    font-size: 50px;
+  }
+
+  .section1-bg {
+      background-image: url(gradient.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 300px;
+  }
+
+  .section1-bg .hero-img {
+      margin-top: -300px;
+  }
+
+  .section1-bg .col-2 img {
+      max-width: 150px;
+  }
+
+  .section1-bg .col-12 h1 {
+      background: linear-gradient(to right, rgb(209, 208, 208), white, rgb(209, 208, 208));
+      background-clip: text;
+      color: transparent;
+  }
+
+  .g2-section .col-4 img {
+      max-width: 100px;
+  }
+
+  .mySwiper1 {
+      background-color: rgba(255, 255, 255, .69);
+  }
+
+  .mySwiper1 .swiper-slide img {
+      max-width: 200px;
+  }
+
+  .effortless-bg{
+    background:linear-gradient(to top ,#3B137A,#2B1954);
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:990px){
-    .fs-60{
-        font-size: 50px;
-    }
-
-    .fs-20{
-        font-size: 17px;
-    }
-
-    .py-20{
-        padding-top: 17px;
-        padding-bottom: 17px;
-    }
-
+.section2-bg{
+    background:linear-gradient(to bottom, white,#F8F8F8);
 }
 
-@media screen and (max-width:770px) {
-    .fs-60{
-  font-size: 40px;
-    }
-    
-    .fs-20{
-        font-size: 16px;
-    }
-}  
+.sction3-img-div img:hover{
+    transform: scale();
+}
 
-@media screen and (max-width:576px) {
-    .w-100-576{
+.section3 .row .col-4 h1{
+    color: transparent;
+    background: linear-gradient(to bottom, #8E11FF, #D768FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.slack-support-bg{
+    background: linear-gradient(to bottom,#640FC5 120px,#B268DF);
+}
+
+.w-130{
+    max-width: 150px;
+    height: 130px !important;
+}
+
+.bg-orange{
+    background-color: #FF7845;
+}
+
+.bg-green{
+    background-color:#00B592;
+}
+
+.best-practise-img{
+height: 100%;
+max-height: 535px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:990px) {
+      .fs-60 {
+          font-size: 50px;
+      }
+
+      .fs-20 {
+          font-size: 17px;
+      }
+
+      .py-20 {
+          padding-top: 17px;
+          padding-bottom: 17px;
+      }
+
+      .section1-bg {
+          margin-top: 200px !important;
+      }
+
+      .section1-bg .hero-img {
+          margin-top: -200px !important;
+      }
+
+      .fs-50{
+        font-size: 40px;
+      }
+  }
+
+  @media screen and (max-width:770px) {
+      .fs-60 {
+          font-size: 40px;
+      }
+
+      .fs-20 {
+          font-size: 16px;
+      }
+
+      .fs-18 {
+          font-size: 16px;
+      }
+
+      .section1-bg {
+          margin-top: 100px !important;
+      }
+
+      .section1-bg .hero-img {
+          margin-top: -100px !important;
+      }
+  
+      .effortless-bg input , a{
+        border-radius:10px !important;  
         width: 100%;
+      }
+            .fs-50{
+        font-size: 30px;
+      }
+
     }
-    .fs-60{
-        font-size: 35px;
-    }
-    .radius-10{
-        border-radius: 10px;
-    }
-}
+
+  @media screen and (max-width:576px) {
+      .w-100-576 {
+          width: 100%;
+      }
+
+      .fs-60 {
+          font-size: 30px;
+      }
+
+      .radius-10 {
+          border-radius: 10px !important;
+      }
+
+      .fs-20 {
+          font-size: 15px;
+      }
+
+      .fs-18 {
+          font-size: 14px;
+      }
+
+      .slack-input{
+        width: 100%;
+      }
+  }
 
 
 
@@ -253,5 +329,11 @@
           justify-content: center;
       }
 
+      .mySwiper1 .swiper-slide .fs-24 {
+          font-size: 18px;
+      }
 
+      .mySwiper1 .swiper-slide img {
+          max-width: 100px;
+      }
   }
